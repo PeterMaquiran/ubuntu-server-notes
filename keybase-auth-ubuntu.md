@@ -55,7 +55,6 @@ sudo nano /etc/ssh/sshd_config
 Set the following options:
 ```bash
 PasswordAuthentication no
-ChallengeResponseAuthentication no
 PubkeyAuthentication yes
 AuthenticationMethods publickey
 ```
@@ -64,3 +63,10 @@ Restart SSH service
 ```bash
 sudo systemctl restart ssh
 ```
+
+Test logig with password
+```bash
+ssh -o PubkeyAuthentication=no username@your-server-ip
+```
+
+
