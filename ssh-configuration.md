@@ -10,6 +10,9 @@ This document explains the SSH configuration for connecting to different servers
 **Purpose:** Personal VPS server access
 
 **Configuration:**
+```
+nano ~/.ssh/config
+```
 
 ```ssh
 Host SAMPLE-VPS
@@ -40,7 +43,9 @@ This will automatically use the `alice` user and the specified identity file.
 **Purpose:** Access Git repositories via SSH on a custom port
 
 **Configuration:**
-
+```
+nano ~/.ssh/config
+```
 ```ssh
 Host example-git-server.com
     User git
