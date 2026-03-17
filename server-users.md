@@ -31,6 +31,11 @@ when generating ssh key run
 chmod 600 ~/.ssh/id_ed25519 # so the owner can read and write
 ```
 
+What 600 means:
+Owner (you) → ✅ read + write
+Group → ❌ no access
+Others → ❌ no access
+
 ## 3. Disable Root Login Over SSH
 
 Edit the SSH daemon configuration file `/etc/ssh/sshd_config` and set:
